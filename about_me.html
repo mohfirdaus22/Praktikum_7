@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Me</title>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_5L9HCTfPy5B8Ydk7ptz4g4UC6HsK9Cq9uA&usqp=CAU');
+            background-size: cover;
+        }
+    </style>
+</head>
+<style>
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .centered-image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+   
+</style>
+
+<body>
+    <h1>Tentang Diri</h1>
+    <div class="centered-image">
+        <img src="https://transformasiindonesia.net/wp-content/uploads/2019/11/Male.jpg"
+            style="width: 100px; height: 100px; ">
+
+    </div>
+
+    <script >
+        // Mengambil parameter yang dikirim dari halaman sebelumnya
+        const params = new URLSearchParams(window.location.search);
+        const nama = params.get('nama');
+        const usia = params.get('usia');
+        const jk = params.get('jk');
+        const alamat = params.get('alamat');
+        const prodi = params.get('prodi');
+        // Menampilkan data pada halaman "Tentang Diri"
+        document.write("<p>Halo Gaess..Kenalin namaku " + nama + ", Saat ini aku berusia " + usia + " tahun. Aku seorang " + jk + ", Saat ini tinggal didaerah  " + alamat + ". Aku sedah menempuh kuliah di UMY jurusan " + prodi + ".</p>");
+    </script>
+    <div class="btn">
+    <button class="next"><a href="hoby.html">Hobby</button>
+    <button class="next"><a href="form.html">Form</button>
+    <button class="back"><a href="indexx.html">Home</button>
+    </div>
+</body>
+
+</html>
